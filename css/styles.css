@@ -1,0 +1,218 @@
+body {
+	background-color: gray; 
+	font-family: 'Francois One', sans-serif;
+}
+
+header {
+	background-color: rgb(78,79,79);
+	width: 100%;
+	color: white;
+	display: flex;
+	height: 90px;
+	justify-content: space-between;
+}
+
+header img {
+	width: 30%;
+	height: 100%;
+}
+
+form {
+	margin: 20px;
+}
+
+form div {
+	display: flex;
+	padding: 2%;
+	justify-content: space-between;
+	font-size: 1.2em;
+}
+
+input[type="text"] {
+	width: 300px;
+	height: 25px;
+	background-color: rgb(58,59,59);
+	border: none;
+	border-radius: 5px; 
+}
+
+main {
+	display: flex;
+	width: 100%;
+	padding: 1px;
+	color: white;
+}
+
+#menuMag {
+	background-color: rgb(58,59,59);
+	width: 30%;
+	height: 450px;
+	margin: 3px;
+	font-size: 1.3em; 
+}
+
+#menuMag ul {
+	margin: 10px;
+}
+
+#menuMag li {
+	margin-top: 10px;
+}
+
+#menuMag li:hover {
+	text-decoration: underline;
+}
+
+
+#magasin {
+	background-color: rgb(58,59,59); 
+	width: 180%;
+	height: 450px;
+	margin: 3px;
+	text-align: center;
+}
+
+#magasin h1 {
+	font-size: 2em;
+}
+
+#magasin img {
+	height: 150px;
+	width: 150px;
+}
+
+#sugBte1 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px; 
+}
+
+#sugBte2 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px; 
+}
+
+nav {
+	background-color: rgb(255,46,37);
+	height: 100px;
+	color: white;
+}
+
+nav ul {
+	display: flex;
+	height: 100%;
+	justify-content: space-around;	
+}
+
+nav ul li {
+	background-color: rgb(191,19,15); 
+	width: 100%;
+	margin: 5px;
+	text-align: center;
+	font-size: 3em;
+	height: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav ul li:hover {
+	background-color: black; 
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	margin-top: 10px; 
+}
+
+#boutonMag {
+	background-color: rgb(201,67,0); 
+}
+
+footer {
+	background-color: rgb(58,59,59); 
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	color:  gray;
+	font-size: 0.8em;
+	padding: 1%;
+}
+
+footer p {
+	text-decoration: underline;
+	margin-bottom: 3px;
+}
+
+/************************* Tablette ******************************/
+
+@media (min-width: 641px) and (max-width: 1024px) {
+	body {
+		font-size: 0.8em;
+	}
+	header img {
+		width: 220px;
+		height: 100%;
+	}
+	nav a {
+		font-size: 0.8em;
+	}
+
+}
+
+/************************* Mobile ********************************/
+
+@media (max-width: 640px){
+
+	body {
+		font-size: 0.8em;
+	}
+	header {
+		display: block;
+	}
+	header img {
+		display: none;
+	}
+
+	input[type="text"] {
+		width: 100%;
+		margin-top: 15px;
+	}
+	nav a {
+		font-size: 0.8em;
+	}
+	#menuMag {
+		font-size: 0.95em
+	}
+	#magesin img {
+		width: 50%;
+		height: 50%;
+	}
+	#sugBte1 div:nth-child(2), div:nth-child(3){
+		display: none;
+	}
+	#sugBte2 div:nth-child(2), div:nth-child(3) {
+		display: none;
+	}
+	nav {
+		height: 270px;
+	}
+	nav ul {
+		display: block;
+	}
+	nav ul li {
+		width: 100%;
+		height: 50px;
+	}
+	footer {
+		display: block;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	footer ul {
+		margin: 10px;
+	}
+
+}
